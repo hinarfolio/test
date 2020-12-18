@@ -1,0 +1,113 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/style/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME | NEXT BASE ACADEMY</title>
+    <meta name="description" content="スポーツ×科学で確かな成長をサポートするオンライン型ベースボールアカデミー、NEXT BASE ACADEMY(ネクストベースアカデミー)のWebサイトです。"/>
+    <meta name="keywords" content="ネクストベースアカデミー">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NEXT BASE ACADEMY"/>
+    <meta property="og:url" content="https://academy.nextbase.co.jp"/>
+    <meta property="og:description" content="最先端のテクノロジーと日本トップレベルのスポーツ科学者の知見を融合させたオンライン型ベースボールアカデミー、NEXT BASE ACADEMY(ネクストベースアカデミー)のWebサイトです。"/>
+    <meta property="og:image" content="https://academy.nextbase.co.jp/assets/img/og_NB_Academy.jpg" />
+    <meta property="og:image:url"  content="https://academy.nextbase.co.jp/assets/img/og_NB_Academy.jpg" />
+    <meta property="twitter:image" content="https://academy.nextbase.co.jp/assets/img/og_NB_Academy.jpg" />
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="NEXT BASE ACADEMY">
+</head>
+
+<button class="open-button" onclick="openForm()">お問い合わせ</button>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>よくある質問 - FAQ</h1>
+<button class="accordion">質問０１</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">質問０２</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">質問０３</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">質問０４</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">質問０５</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">質問０６</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    <button class="changeBtn" onclick="changeForm()">メールでお問い合わせ</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">キャンセル</button>
+  </form>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
+<div class="form-second" id="secForm">
+  <form class="form-container">
+    <h1>メールでお問い合わせ</h1>
+
+    <label for="email"><b>メールアドレス</b></label>
+    <input type="text" placeholder="youremail@nextbase.co.jp" name="email" required>
+
+    <label for="psw"><b>お名前</b></label>
+    <input type="password" placeholder="山田　覚" name="psw" required>
+
+    <label for="contents"><b>お問い合わせ内容</b></label>
+    <input type="contents" placeholder="内容記入" name="psw" required>
+
+    <button type="submit" class="actBtn">メール送信</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">キャンセル</button>
+  </form>
+</div>
+
+
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function changeForm() {
+  document.getElementById("secForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("secForm").style.display = "none";
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
